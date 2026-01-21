@@ -1,0 +1,46 @@
+body{
+    background-image: url( kingsmen.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    
+   
+}
+
+button, .enter-btn{
+  height: 60px;
+  width: 200px;
+  background: none;
+  color: rgb(250, 250, 250);
+  text-decoration: none;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 2px solid transparent; /* default border */
+}
+
+/* Ensure link doesn't mess up styles */
+.enter-btn-link {
+    text-decoration: none;
+}
+
+.km{
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+}
+
+button:hover, .enter-btn:hover {
+  animation: shake 0.3s ease-in-out infinite;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-3px); }
+  50% { transform: translateX(3px); }
+  75% { transform: translateX(-3px); }
+  100% { transform: translateX(0); }
+}
